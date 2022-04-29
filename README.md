@@ -37,6 +37,9 @@
 
 #### Decompress the tar.gz file
 `tar -xzvf TRAINED_model.tar.gz`
+`cd TRAINED_model/`
+`gunzip *`
+
 
 ## Running Inference
 We provide two input formats for users to compute the chromatin profile changes:
