@@ -67,7 +67,7 @@ def main(*arg):
     #print(tensor_Ref.shape)
     #print(tensor_Alt.shape)
     print('Calculating ')
-    with open ('intergenic.SNP.dl.logRatio.list.hash.pickle', 'rb') as f:
+    with open ('../intergenic.SNP.dl.logRatio.list.hash.pickle', 'rb') as f:
         l_h = pickle.load(f)
 
     refP1, refL1, altP1, altL1 = modelPredict('../TRAINED_model/atac_05_10h_LSTM.h5', tensor_Ref, tensor_Alt)
