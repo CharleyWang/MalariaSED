@@ -73,7 +73,7 @@ To run the prediction model, please use the following command:
 
 `cd FASTA_prediction`
 
-`python snpToTensor.DLpredict.py <Reference_fasta_file>  <Alternation_fasta_file>  <output file>`
+`python fastaToTensor.DLpredict.py <Reference_fasta_file>  <Alternation_fasta_file>  <output file>`
 
 where <Reference_fasta_file> indicates a fasta file for reference, while <Alternation_fasta_file> for alternate sequence. The sequence length within both of the files should be 1kb, and have the same.
 
