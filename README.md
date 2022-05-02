@@ -64,6 +64,13 @@ Here is an exapmle
 `python snpToTensor.DLpredict.py example.variants  ../genome/genome_information_pl9.0.bed ../genome/PlasmoDB-26_Pfalciparum3D7_Genome.fasta outputFILE`
 
 #### Output formats from VCF_prediction
+The output of MalairaSED provides a tab-separated file.
+Column 1: the information of a input locus, listing as the format "chromosome location", "reference sequence", "alternat sequence"::"1kb extended                         chromosome location surronding the locus". 
+Column 2 and 3: The closest gene ID and corresponding distance to the locus, Plasmodb version 26.
+Column 4 and 5: The closest gene ID and corresponding distance to the locus, Plasmodb version 55.
+Column 6 to 31: The probability of each chromatin profile predicted from MalariaSED
+column 32 to 44: 
+
 
 
 ### FASTA_prediction
