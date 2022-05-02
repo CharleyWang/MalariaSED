@@ -81,7 +81,7 @@ Column 45 to 57: The E-value of a chromatin effect is the expected fraction of t
 
 
 ### FASTA_prediction
-Users can upload two Fasta files for reference and alternation sequences. Multiple sequences are allowed, and MalaraiSED will calculate chromatin effects between two Fasta sequences with the same row ID in the reference and alternation files. The length of both Fasta files should be equal to 1kb.
+Users can upload two Fasta files for reference and alternation sequences. Multiple sequences are allowed, and MalaraiSED will calculate chromatin effects between two Fasta sequences with the same row ID in the reference and alternation files. The length of both Fasta files should be equal to 1kb. 
 
 To run the prediction model, please use the following command:
 
@@ -89,10 +89,20 @@ To run the prediction model, please use the following command:
 
 `python fastaToTensor.DLpredict.py <Reference_fasta_file>  <Alternation_fasta_file>  <output file>`
 
-where <Reference_fasta_file> indicates a fasta file for reference, while <Alternation_fasta_file> for alternate sequence. The sequence length within both of the files should be 1kb, and have the same.
+where <Reference_fasta_file> indicates a fasta file for reference, while <Alternation_fasta_file> for alternate sequence. The sequence length within both of the files should be 1kb, and have the same fasta name.
 
 Here is an exapmle
 
 `cd FASTA_prediction`
 
 `python fastaToTensor.DLpredict.py example.REF.fasta example.ALT.fasta outputFile`
+
+#### Output formats from FASTA_prediction
+Column 1: the input fasta head  
+
+Column 2 to 27: The probability of each chromatin profile predicted from MalariaSED
+
+Column 8 to 40: The absolute chromatin effect calculated as log2 fold change of odds. 
+
+Column 41 to 53: The E-value of a chromatin effect is the expected fraction of the non-coding variants reported in MalariaGEN database that would present higher effect than the variant here.
+
