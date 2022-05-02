@@ -75,8 +75,9 @@ Column 4 and 5: The closest gene ID and corresponding distance to the locus, Pla
 
 Column 6 to 31: The probability of each chromatin profile predicted from MalariaSED
 
-Column 32 to 44: 
+Column 32 to 44: The absolute chromatin effect calculated as log2 fold change of odds. 
 
+Column 45 to 57: The E-value of a chromatin effect is the expected fraction of the non-coding variants reported in MalariaGEN database that would present higher effect than the variant here.
 
 
 ### FASTA_prediction
