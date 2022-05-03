@@ -102,7 +102,7 @@ Column 1: the input fasta head
 
 Column 2 to 27: The probability of each chromatin profile predicted from MalariaSED
 
-Column 8 to 40: The absolute chromatin effect calculated as log2 fold change of odds. 
+Column 28 to 40: The absolute chromatin effect calculated as log2 fold change of odds. 
 
 Column 41 to 53: The E-value of a chromatin effect is the expected fraction of the non-coding variants reported in MalariaGEN database that would present higher effect than the variant here.
 
