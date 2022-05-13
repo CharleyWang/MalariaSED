@@ -17,6 +17,10 @@
 
 
 ## To download and install MalariaSED
+
+#### Install Git Large File Storage support(lfs)
+`git lsf install`
+
 #### Clone the repository
 `git clone https://github.com/CharleyWang/MalariaSED.git`
 
