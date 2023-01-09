@@ -20,6 +20,8 @@ The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparamet
 
 `(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('time_specific_peak_generateTensor//tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
 
+To run it, just simplely type `python tl_train_LSTM_bayes.py `
+
 
 ## Setup
 1.bedtools (>2.30.0)
