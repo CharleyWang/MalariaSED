@@ -12,13 +12,13 @@ The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparamet
 
 `#example for atac_seq for 15-20h data`
 
-`trainAllpos = tensorLoad('../time_specific_peak_generateTensor/tensorData_h15_20/positive.tensor_1k')`
+`trainAllpos = tensorLoad('time_specific_peak_generateTensor/tensorData_h15_20/positive.tensor_1k')`
 
-`trainAllneg = tensorLoad('../time_specific_peak_generateTensor/tensorData_h15_20/negative.tensor_1k')`
+`trainAllneg = tensorLoad('time_specific_peak_generateTensor/tensorData_h15_20/negative.tensor_1k')`
 
-`(tfXtrainPos, tfXvalidPos, tfXtestPos) = train_testID_returnSampling('../time_specific_peak_generateTensor/tensorData_h15_20/locName.positive_1k.txt', trainAllpos)`
+`(tfXtrainPos, tfXvalidPos, tfXtestPos) = train_testID_returnSampling('time_specific_peak_generateTensor/tensorData_h15_20/locName.positive_1k.txt', trainAllpos)`
 
-`(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('../time_specific_peak_generateTensor//tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
+`(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('time_specific_peak_generateTensor//tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
 
 
 ## Setup
