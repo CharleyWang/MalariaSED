@@ -8,8 +8,12 @@
 Please download the datasets for 15 chromatin profiles from the following link. 
 https://usf.box.com/s/278l0z6qr33res04oasn4wzekct0vqkt
 
-The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparameter optimization process. You need to change the input file after 'def main():
+The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparameter optimization process. You need to change the input file after at the begining four lines in the main function:
 
+`trainAllpos = tensorLoad('../time_specific_peak_generateTensor/tensorData_h15_20/positive.tensor_1k')`
+`trainAllneg = tensorLoad('../time_specific_peak_generateTensor/tensorData_h15_20/negative.tensor_1k')`
+`(tfXtrainPos, tfXvalidPos, tfXtestPos) = train_testID_returnSampling('../time_specific_peak_generateTensor/tensorData_h15_20/locName.positive_1k.txt', trainAllpos)`
+`(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('../time_specific_peak_generateTensor//tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
 
 
 ## Setup
