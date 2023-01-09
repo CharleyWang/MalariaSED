@@ -18,7 +18,7 @@ The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparamet
 
 `(tfXtrainPos, tfXvalidPos, tfXtestPos) = train_testID_returnSampling('time_specific_peak_generateTensor/tensorData_h15_20/locName.positive_1k.txt', trainAllpos)`
 
-`(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('time_specific_peak_generateTensor//tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
+`(tfXtrainNeg, tfXvalidNeg, tfXtestNeg) = train_testID_returnSampling('time_specific_peak_generateTensor/tensorData_h15_20/locName.negative_1k.txt', trainAllneg)`
 
 To run it, just simplely type `python tl_train_LSTM_bayes.py `
 
