@@ -8,7 +8,7 @@
 Please download the datasets for 15 chromatin profiles from the following link. 
 https://usf.box.com/s/278l0z6qr33res04oasn4wzekct0vqkt
 
-The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparameter optimization process. You need to change the input file after at the begining four lines in the main function:
+The file 'tl_train_LSTM_bayes.py' in each folder corresponds to the hyperparameter optimization process. The file 'genome_2_tensor.py' contains many imporant functions for successfully running 'tl_train_LSTM_bayes.py'. Please keep the two files together in each folder. You need to change the input file in the begining four lines of the main function:
 
 `#example for atac_seq for 15-20h data`
 
